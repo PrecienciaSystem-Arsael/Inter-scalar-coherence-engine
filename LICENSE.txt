@@ -1,0 +1,21 @@
+ISC Engine v1.2 — Proprietary License (2025)
+
+Copyright © 2025 Steven A. Ortiz.
+
+All rights reserved.
+
+Permission is granted to view and evaluate the software and documentation
+for non-commercial research and evaluation purposes only.
+
+You may NOT:
+- copy, modify, merge, publish, distribute, sublicense, or sell the software
+  or any derivative works,
+- use the software or documentation as part of any commercial system or product,
+- use the software or documentation to train models or derivative systems.
+
+Any commercial use requires explicit written consent from the owner:
+precienciasystem@gmail.com
+
+Violation of these terms will result in immediate termination of rights.
+
+This software and documentation are provided “as is” without warranty of any kind.
