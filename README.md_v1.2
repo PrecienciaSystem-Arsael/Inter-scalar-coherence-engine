@@ -1,0 +1,227 @@
+# Inter-Scalar Coherence Engine (ISC Engine)
+## README — Version 1.2 (Frozen MVP)
+
+Internal engine name: PrecienciaEngine v1.2  
+External product name: Inter-Scalar Coherence Engine (ISC Engine)  
+Contact: precienciasystem@gmail.com
+
+---
+
+# 1. Overview
+
+The Inter-Scalar Coherence Engine (ISC Engine) is a hybrid neural–symbolic system that evaluates the **structural coherence** 
+of any text.
+
+It determines whether a passage:
+- preserves internal proportionality,
+- maintains directional consistency (Direction-of-Meaning),
+- avoids structural drift or simulacrum,
+- exhibits mechanism-based reasoning instead of rhetorical surface,
+- remains anchored to an internal return/feedback loop.
+
+This system does **not** classify sentiment, ideology, or topic;  
+it evaluates **structure**, not content.
+
+---
+
+# 2. Key Capabilities
+
+### ✔ Structural Polarity (POS / NEG / NON)
+- **Preciencia (POS)** → coherent structural pattern  
+- **Inverted / Simulacrum (NEG)** → pattern that breaks proportion or mechanism  
+- **Non-Structured (NON)** → surreal, floating, or non-anchored pattern  
+- **Structural Ally** → symbolic override when structure is present but v5 misfires
+
+### ✔ Engine v4 — Coherence Metrics  
+- **C** (coherence cost)  
+- **coherence_score = exp(−C)**  
+- **S_sim** (cycle similarity)  
+- **θ_check** (invariance threshold pass/fail)
+
+### ✔ Macro-Field Mapping (v6b)
+Maps text into one of 12 symbolic/topological fields.
+
+### ✔ Symbolic Layer v2 (Explainable Rules)
+Detects:
+- proportionality  
+- return/closure  
+- heteronomy  
+- anti-structure  
+- drift  
+- pseudo-quantum  
+- corporate simulacrum & guarantees  
+- metaphor-float / non-anchored surrealism  
+
+### ✔ Label Fusion (v4)
+Produces unified public classes:
+- **Preciencia**  
+- **Structural Ally**  
+- **Inverted / Simulacrum**  
+- **Non-Structured**
+
+---
+
+# 3. Pipeline (v1.2 Frozen)
+
+```
+Input Text
+   │
+   ▼
+Encoder v5 → geometric embedding
+   │
+   ▼
+Engine v4 → invariance metrics (Δκ, DoM, ΔI, dH/dt, S_sim)
+   │
+   ▼
+Macro-Field v6b → symbolic-domain topology
+   │
+   ▼
+Symbolic Rules v2 → explainability & pattern flags
+   │
+   ▼
+Label Fusion v4 → Preciencia / Ally / Inverted / Non-Structured
+```
+
+---
+
+# 4. Installation
+
+Requirements:
+```
+Python 3.10+
+pip install -r requirements.txt
+```
+
+Clone repo:
+```
+git clone https://github.com/.../isc-engine.git
+cd isc-engine
+```
+
+---
+
+# 5. CLI Usage — preciencia_cli_v1_2.py
+
+Direct text:
+```
+python3 preciencia_cli_v1_2.py --text "Coherence is proportion preserved..."
+```
+
+Pipe text:
+```
+echo "The universe aligns everything..." | python3 preciencia_cli_v1_2.py
+```
+
+---
+
+# 6. API Usage (FastAPI)
+
+Start server:
+```
+python3 preciencia_api_v1_2.py
+```
+
+Evaluate text:
+```
+curl -X POST http://127.0.0.1:8000/evaluate \
+ -H "Content-Type: application/json" \
+ -d '{"text":"Coherence emerges when structure returns to its axis."}'
+```
+
+---
+
+# 7. Validation Results (v1.2 Frozen)
+
+### ✔ KV-3 (20 curated structural samples)  
+**20/20 correct (100%)**
+
+### ✔ RW-20 (mixed real-world texts)  
+**18/20 correct (~90%)**
+
+### ✔ NEW — RW-40 (multi-domain stress test)  
+**35/40 correct (87.5%)**
+
+Domains:
+- corporate hype  
+- pseudo-quantum  
+- new-age drift  
+- religious-authority patterns  
+- surreal NON texts  
+- structural POS texts  
+
+RW-40 exposes 5 consistent false-positives → all addressable with **symbolic v2.3** rules.
+
+---
+
+# 8. File Structure (clean)
+
+```
+isc-engine/
+│
+├── engine/
+│     ├── preciencia_engine_v1_2.py
+│     ├── preciencia_eval_bundle_v1_2.py
+│     └── preciencia_label_fusion_v4.py
+│
+├── symbolic/
+│     └── preciencia_symbolic_rules_v2.py
+│
+├── api/
+│     └── preciencia_api_v1_2.py
+│
+├── models/
+│     ├── preciencia_encoder_v5/
+│     └── preciencia_prototypes_v5.npz
+│
+├── examples/
+│     └── preciencia_demo_v1_2.py
+│
+├── tests/
+│     ├── preciencia_eval_kv3_v3.py
+│     └── preciencia_eval_rw40_v1.py   ← (NEW)
+│
+├── README.md
+└── README_dev.md
+```
+
+---
+
+# 9. Use Cases
+
+### AI Safety & Alignment  
+- drift detection  
+- chain-of-thought coherence filtering
+
+### Enterprise Messaging & Compliance  
+- detect structural inversion  
+- corporate simulacra & over-promising patterns  
+- guarantee-without-mechanism detection
+
+### Editorial / Writing Tools  
+- structural weak-points  
+- drift diagnostics
+
+### Neural-Symbolic Research  
+- invariance + symbolic rule integration  
+- hybrid structural reasoning
+
+---
+
+# 10. Roadmap (Next 3–6 Months)
+
+- v1.3 REST API + Web Dashboard  
+- RW-100 expansion  
+- symbolic v2.3 (corporate drift, heteronomy v2, structure-absence v2)  
+- LLM integration (filter/verifier)  
+- pilots with research labs & enterprises  
+
+---
+
+# 11. Contact
+
+precienciasystem@gmail.com  
+San Francisco / New York (2025)
+
+---
+
+End of document.
